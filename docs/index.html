@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evo 2 の内部表現をスパースオートエンコーダで読む</title>
+<style>
+:root { --ink: #1c2b33; --sub: #616d76; --line: #e2e6ea; --accent: #1b6ec2; }
+* { box-sizing: border-box; }
+html { background: #fff; }
+body {
+  margin: 0; color: var(--ink); background: #fff;
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic",
+               -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px; line-height: 1.8; font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 42rem; margin: 0 auto; padding: 5rem 1.75rem 5rem; }
+
+h1 { font-size: 1.38rem; line-height: 1.6; font-weight: 600; margin: 0 0 0.8rem; }
+header p { margin: 0 0 3.2rem; color: var(--sub); font-size: 0.95rem; }
+
+.part { display: flex; justify-content: space-between; align-items: center;
+        gap: 0.8rem 1.5rem; flex-wrap: wrap;
+        padding: 1.5rem 0; border-top: 1px solid var(--line); }
+.part h2 { font-size: 1.02rem; font-weight: 600; margin: 0; }
+.part h2 .sub { font-weight: 400; color: var(--sub); font-size: 0.94rem;
+                margin-left: 0.7rem; }
+.part h2 a { color: var(--ink); text-decoration: none;
+             box-shadow: inset 0 -1px 0 0 #c5d4e2; }
+.part h2 a:hover { box-shadow: inset 0 -2px 0 0 var(--accent); }
+.meta { display: flex; align-items: center; }
+.meta img { height: 20px; display: block; }
+
+footer { margin-top: 3.2rem; padding-top: 1.6rem; border-top: 1px solid var(--line);
+         color: var(--sub); font-size: 0.85rem; line-height: 1.7; }
+footer .row { margin-bottom: 1rem; }
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer .row a { margin-right: 1.3rem; }
+footer cite { font-style: normal; }
+footer cite a { color: var(--sub); }
+
+@media (max-width: 32rem) {
+  .wrap { padding: 3rem 1.25rem 4rem; }
+  .part { justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Evo 2 の内部表現をスパースオートエンコーダで読む</h1>
+  <p>
+    Evo 2 の埋め込みを SAE で 32768 個の特徴に分解し, 大腸菌ゲノムとタンパク質の立体構造の上に
+    読み出します. Google Colab で実行できます.
+  </p>
+</header>
+
+<section class="part">
+  <h2><a href="part1.html">第 1 部</a> <span class="sub">ゲノムトラックと立体構造への読み出し</span></h2>
+  <div class="meta">
+    <a href="https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part1.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"></a>
+  </div>
+</section>
+
+<section class="part">
+  <h2><a href="part2.html">第 2 部</a> <span class="sub">アノテーションによる特徴の選択</span></h2>
+  <div class="meta">
+    <a href="https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part2.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"></a>
+  </div>
+</section>
+
+<section class="part">
+  <h2><a href="part3.html">第 3 部</a> <span class="sub">DSSP・配列書き換え・プロファージ間の比較</span></h2>
+  <div class="meta">
+    <a href="https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part3.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"></a>
+  </div>
+</section>
+
+<section class="part">
+  <h2><a href="appendix.html">付録</a> <span class="sub">左文脈・エンコード・活性行列</span></h2>
+  <div class="meta">
+    <a href="https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_appendix.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"></a>
+  </div>
+</section>
+
+<footer>
+  <div class="row">
+    <a href="https://github.com/GenAIBio/evo2-sae-handson">GitHub</a>
+    <a href="https://huggingface.co/datasets/suzuki-2001/evo2-sae-handson">Hugging Face</a>
+    <a href="https://doi.org/10.5281/zenodo.21856795">Zenodo</a>
+  </div>
+  <cite>
+    Brixi G, Durrant MG, Ku J, Naghipourfar M, Poli M, Sun G, et al.
+    Genome modelling and design across all domains of life with Evo 2.
+    <i>Nature</i> 2026.
+    <a href="https://doi.org/10.1038/s41586-026-10176-5">doi:10.1038/s41586-026-10176-5</a>
+  </cite>
+</footer>
+
+</div>
+</body>
+</html>

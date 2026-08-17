@@ -1,0 +1,12 @@
+data/*
+dataset/*
+!dataset/README.md
+!dataset/sha256sums.txt
+tracks/
+notebooks/data
+notebooks/tracks
+.ipynb_checkpoints/
+__pycache__/
+*.egg-info/
+build/
+.work/
