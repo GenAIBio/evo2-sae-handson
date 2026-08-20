@@ -10,10 +10,10 @@ Fig. 4 の大腸菌の解析をたどる構成です.
 
 | | | |
 |---|---|---|
-| 第 1 部 ゲノムトラックと立体構造への読み出し | [evo2_sae_part1.ipynb](notebooks/evo2_sae_part1.ipynb) 7 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part1.ipynb) |
-| 第 2 部 アノテーションによる特徴の選択 | [evo2_sae_part2.ipynb](notebooks/evo2_sae_part2.ipynb) 3 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part2.ipynb) |
-| 第 3 部 DSSP・配列書き換え・プロファージ間の比較 | [evo2_sae_part3.ipynb](notebooks/evo2_sae_part3.ipynb) 4 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part3.ipynb) |
-| 付録 左文脈・エンコード・活性行列 | [evo2_sae_appendix.ipynb](notebooks/evo2_sae_appendix.ipynb) 4 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_appendix.ipynb) |
+| [第 1 部 ゲノムトラックと立体構造への読み出し](https://genaibio.github.io/evo2-sae-handson/part1.html) | [evo2_sae_part1.ipynb](notebooks/evo2_sae_part1.ipynb) 7 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part1.ipynb) |
+| [第 2 部 アノテーションによる特徴の選択](https://genaibio.github.io/evo2-sae-handson/part2.html) | [evo2_sae_part2.ipynb](notebooks/evo2_sae_part2.ipynb) 3 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part2.ipynb) |
+| [第 3 部 DSSP・配列書き換え・プロファージ間の比較](https://genaibio.github.io/evo2-sae-handson/part3.html) | [evo2_sae_part3.ipynb](notebooks/evo2_sae_part3.ipynb) 4 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_part3.ipynb) |
+| [付録 左文脈・エンコード・活性行列](https://genaibio.github.io/evo2-sae-handson/appendix.html) | [evo2_sae_appendix.ipynb](notebooks/evo2_sae_appendix.ipynb) 4 節 | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GenAIBio/evo2-sae-handson/blob/main/notebooks/evo2_sae_appendix.ipynb) |
 
 手元で動かす場合は `jupyter lab notebooks/evo2_sae_part1.ipynb` です. 依存パッケージは最初の
 セルが入れます. データは Hugging Face から取得し, `data/` に残ります.
